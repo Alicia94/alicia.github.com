@@ -12,11 +12,11 @@
 <meta name="keywords" content="5G">
 <meta property="og:type" content="article">
 <meta property="og:title" content="5G NR Modulation &amp; Demodulation">
-<meta property="og:url" content="http://yoursite.com/2018/11/13/5G NR Modulation & Demodulation/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/11/13/5G NR 调制与解调/index.html">
 <meta property="og:site_name" content="Alicia&#39;s Blog">
 <meta property="og:description" content="调制5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-13T10:11:56.431Z">
+<meta property="og:updated_time" content="2018-11-13T15:03:46.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="5G NR Modulation &amp; Demodulation">
 <meta name="twitter:description" content="调制5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：">
@@ -146,7 +146,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-5G NR Modulation &amp; Demodulation" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-5G NR 调制与解调" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -158,7 +158,7 @@
   
 
         
-        <a href="/2018/11/13/5G NR Modulation & Demodulation/" class="archive-article-date">
+        <a href="/2018/11/13/5G NR 调制与解调/" class="archive-article-date">
   	<time datetime="2018-11-13T07:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-13</time>
 </a>
         
@@ -170,11 +170,15 @@
 <h3 id="1-π-2-BPSK"><a href="#1-π-2-BPSK" class="headerlink" title="1. π/2-BPSK"></a>1. π/2-BPSK</h3><script type="math/tex; mode=display">d(i)=\dfrac{e^{j\tfrac{\pi}{2}(i\bmod2)}}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]</script><h3 id="2-BPSK"><a href="#2-BPSK" class="headerlink" title="2. BPSK"></a>2. BPSK</h3><script type="math/tex; mode=display">d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]</script><h3 id="3-QPSK"><a href="#3-QPSK" class="headerlink" title="3. QPSK"></a>3. QPSK</h3><script type="math/tex; mode=display">d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(2i)\big)+j\big(1-2b(2i+1)\big)\Big]</script><h3 id="4-16QAM"><a href="#4-16QAM" class="headerlink" title="4. 16QAM"></a>4. 16QAM</h3><script type="math/tex; mode=display">
 \begin{split}
 d(i)=&\dfrac{1}{\sqrt{10}}\biggl\{\bigl(1-2b(4i)\bigr)\Bigl[2-\bigl(1-2b(4i+2)\bigr)\Bigr]\\
-&j\bigl(1-2b(4i+1)\bigr)\Bigl[2-\bigl(1-2b(4i+3)\bigr)\Bigr]\biggr\}
+&+j\bigl(1-2b(4i+1)\bigr)\Bigl[2-\bigl(1-2b(4i+3)\bigr)\Bigr]\biggr\}
 \end{split}</script><h3 id="5-64QAM"><a href="#5-64QAM" class="headerlink" title="5. 64QAM"></a>5. 64QAM</h3><script type="math/tex; mode=display">
 \begin{split}
 d(i)=&\dfrac{1}{\sqrt{42}}\bigg\{\big(1-2b(6i)\big)\bigg[4-\big(1-2b(6i+2)\big)\Big[2-\big(1-2b(6i+4)\big)\Big]\bigg]\\
-&j\big(1-2b(6i+1)\big)\bigg[4-\big(1-2b(6i+3)\big)\Big[2-\big(1-2b(6i+5)\big)\Big]\bigg]\bigg\}
+&+j\big(1-2b(6i+1)\big)\bigg[4-\big(1-2b(6i+3)\big)\Big[2-\big(1-2b(6i+5)\big)\Big]\bigg]\bigg\}
+\end{split}</script><h3 id="6-256QAM"><a href="#6-256QAM" class="headerlink" title="6. 256QAM"></a>6. 256QAM</h3><script type="math/tex; mode=display">
+\begin{split}
+d(i)=&\dfrac{1}{\sqrt{170}}\Biggl\{\bigl(1-2b(8i)\bigr)\Biggl[8-\bigl(1-2b(8i+2)\bigr)\biggl[4-\bigl(1-2b(8i+4)\bigr)\Bigl[2-\bigl(1-2b(8i+6)\bigr)\Bigr]\biggr]\Biggr]\\
+&+j\bigl(1-2b(8i+1)\bigr)\Biggl[8-\bigl(1-2b(8i+3)\bigr)\biggl[4-\bigl(1-2b(8i+5)\bigr)\Bigl[2-\bigl(1-2b(8i+7)\bigr)\Bigr]\biggr]\Biggr]\Biggr\}
 \end{split}</script><h2 id="解调"><a href="#解调" class="headerlink" title="解调"></a>解调</h2>
       
 
@@ -257,7 +261,7 @@ d(i)=&\dfrac{1}{\sqrt{42}}\bigg\{\big(1-2b(6i)\big)\bigg[4-\big(1-2b(6i+2)\big)\
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#调制"><span class="toc-number">1.</span> <span class="toc-text">调制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-π-2-BPSK"><span class="toc-number">1.1.</span> <span class="toc-text">1. π/2-BPSK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-BPSK"><span class="toc-number">1.2.</span> <span class="toc-text">2. BPSK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-QPSK"><span class="toc-number">1.3.</span> <span class="toc-text">3. QPSK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-16QAM"><span class="toc-number">1.4.</span> <span class="toc-text">4. 16QAM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-64QAM"><span class="toc-number">1.5.</span> <span class="toc-text">5. 64QAM</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解调"><span class="toc-number">2.</span> <span class="toc-text">解调</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#调制"><span class="toc-number">1.</span> <span class="toc-text">调制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-π-2-BPSK"><span class="toc-number">1.1.</span> <span class="toc-text">1. π/2-BPSK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-BPSK"><span class="toc-number">1.2.</span> <span class="toc-text">2. BPSK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-QPSK"><span class="toc-number">1.3.</span> <span class="toc-text">3. QPSK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-16QAM"><span class="toc-number">1.4.</span> <span class="toc-text">4. 16QAM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-64QAM"><span class="toc-number">1.5.</span> <span class="toc-text">5. 64QAM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-256QAM"><span class="toc-number">1.6.</span> <span class="toc-text">6. 256QAM</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解调"><span class="toc-number">2.</span> <span class="toc-text">解调</span></a></li></ol>
                     </div>
                 </span>
             </div>
