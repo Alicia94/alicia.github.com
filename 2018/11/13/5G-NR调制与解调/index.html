@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Alicia&#39;s Blog">
 <meta property="og:description" content="调制5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-13T09:05:23.689Z">
+<meta property="og:updated_time" content="2018-11-13T09:14:07.282Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="5G NR调制与解调">
 <meta name="twitter:description" content="调制5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：">
@@ -181,8 +181,8 @@
 <h3 id="1-π-2-BPSK"><a href="#1-π-2-BPSK" class="headerlink" title="1. π/2-BPSK"></a>1. π/2-BPSK</h3><p>$$d(i)=\dfrac{e^{j\tfrac{\pi}{2}(i\bmod2)}}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]$$</p>
 <h3 id="2-BPSK"><a href="#2-BPSK" class="headerlink" title="2. BPSK"></a>2. BPSK</h3><p>$$d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]$$</p>
 <h3 id="3-QPSK"><a href="#3-QPSK" class="headerlink" title="3. QPSK"></a>3. QPSK</h3><p>$$d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(2i)\big)+j\big(1-2b(2i+1)\big)\Big]$$</p>
-<h3 id="4-16QAM"><a href="#4-16QAM" class="headerlink" title="4. 16QAM"></a>4. 16QAM</h3><p>$$d(i)=\dfrac{1}{\sqrt{10}}\bigg{\big(1-2b(4i)\big)\Big[2-\big(1-2b(4i+2)\big)\Big]+j\big(1-2b(4i+1)\big)\Big[2-\big(1-2b(4i+3)\big)\Big]\bigg}$$</p>
-<h3 id="5-64QAM"><a href="#5-64QAM" class="headerlink" title="5. 64QAM"></a>5. 64QAM</h3><p>$$d(i)=\dfrac{1}{\sqrt{42}}\bigg{\big(1-2b(6i)\big)\bigg[4-\big(1-2b(6i+2)\big)\Big[2-\big(1-2b(6i+4)\big)\Big]\bigg]+j\big(1-2b(6i+1)\big)\bigg[4-\big(1-2b(6i+3)\big)\Big[2-\big(1-2b(6i+5)\big)\Big]\bigg]\bigg}$$</p>
+<h3 id="4-16QAM"><a href="#4-16QAM" class="headerlink" title="4. 16QAM"></a>4. 16QAM</h3><p>$$\begin{split}<br>d(i)=\dfrac{1}{\sqrt{10}}&amp;\bigg{\big(1-2b(4i)\big)\Big[2-\big(1-2b(4i+2)\big)\Big]+{}\<br>&amp;j\big(1-2b(4i+1)\big)\Big[2-\big(1-2b(4i+3)\big)\Big]\bigg}<br>\end{split}$$</p>
+<h3 id="5-64QAM"><a href="#5-64QAM" class="headerlink" title="5. 64QAM"></a>5. 64QAM</h3><p>$$\begin{split}<br>d(i)=\dfrac{1}{\sqrt{42}}&amp;\bigg{\big(1-2b(6i)\big)\bigg[4-\big(1-2b(6i+2)\big)\Big[2-\big(1-2b(6i+4)\big)\Big]\bigg]+{}\<br>&amp;j\big(1-2b(6i+1)\big)\bigg[4-\big(1-2b(6i+3)\big)\Big[2-\big(1-2b(6i+5)\big)\Big]\bigg]\bigg}<br>\end{split}$$</p>
 <h2 id="解调"><a href="#解调" class="headerlink" title="解调"></a>解调</h2>
       
 
