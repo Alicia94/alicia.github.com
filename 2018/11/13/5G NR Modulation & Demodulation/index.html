@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Alicia&#39;s Blog">
 <meta property="og:description" content="调制5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-13T09:46:38.639Z">
+<meta property="og:updated_time" content="2018-11-13T10:11:56.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="5G NR Modulation &amp; Demodulation">
 <meta name="twitter:description" content="调制5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：">
@@ -178,12 +178,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="调制"><a href="#调制" class="headerlink" title="调制"></a>调制</h2><p>5G NR中共有6种调制方式，调制映射器输入为0/1比特序列，输出为复值符号序列。下式中$b(i)$代表第$i$个比特，$d(i)$代表第$i$个符号：<br><a id="more"></a></p>
-<h3 id="1-π-2-BPSK"><a href="#1-π-2-BPSK" class="headerlink" title="1. π/2-BPSK"></a>1. π/2-BPSK</h3><p>$$d(i)=\dfrac{e^{j\tfrac{\pi}{2}(i\bmod2)}}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]$$</p>
-<h3 id="2-BPSK"><a href="#2-BPSK" class="headerlink" title="2. BPSK"></a>2. BPSK</h3><p>$$d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]$$</p>
-<h3 id="3-QPSK"><a href="#3-QPSK" class="headerlink" title="3. QPSK"></a>3. QPSK</h3><p>$$d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(2i)\big)+j\big(1-2b(2i+1)\big)\Big]$$</p>
-<h3 id="4-16QAM"><a href="#4-16QAM" class="headerlink" title="4. 16QAM"></a>4. 16QAM</h3><p>$$<br>\begin{split}<br>d(i)=&amp;\dfrac{1}{\sqrt{10}}\biggl{\bigl(1-2b(4i)\bigr)\Bigl[2-\bigl(1-2b(4i+2)\bigr)\Bigr]\<br>&amp;j\bigl(1-2b(4i+1)\bigr)\Bigl[2-\bigl(1-2b(4i+3)\bigr)\Bigr]\biggr}<br>\end{split}<br>$$</p>
-<h3 id="5-64QAM"><a href="#5-64QAM" class="headerlink" title="5. 64QAM"></a>5. 64QAM</h3><p>$$<br>\begin{split}<br>d(i)=&amp;\dfrac{1}{\sqrt{42}}\bigg{\big(1-2b(6i)\big)\bigg[4-\big(1-2b(6i+2)\big)\Big[2-\big(1-2b(6i+4)\big)\Big]\bigg]\<br>&amp;j\big(1-2b(6i+1)\big)\bigg[4-\big(1-2b(6i+3)\big)\Big[2-\big(1-2b(6i+5)\big)\Big]\bigg]\bigg}<br>\end{split}<br>$$</p>
-<h2 id="解调"><a href="#解调" class="headerlink" title="解调"></a>解调</h2>
+<h3 id="1-π-2-BPSK"><a href="#1-π-2-BPSK" class="headerlink" title="1. π/2-BPSK"></a>1. π/2-BPSK</h3><script type="math/tex; mode=display">d(i)=\dfrac{e^{j\tfrac{\pi}{2}(i\bmod2)}}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]</script><h3 id="2-BPSK"><a href="#2-BPSK" class="headerlink" title="2. BPSK"></a>2. BPSK</h3><script type="math/tex; mode=display">d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(i)\big)+j\big(1-2b(i)\big)\Big]</script><h3 id="3-QPSK"><a href="#3-QPSK" class="headerlink" title="3. QPSK"></a>3. QPSK</h3><script type="math/tex; mode=display">d(i)=\dfrac{1}{\sqrt{2}}\Big[\big(1-2b(2i)\big)+j\big(1-2b(2i+1)\big)\Big]</script><h3 id="4-16QAM"><a href="#4-16QAM" class="headerlink" title="4. 16QAM"></a>4. 16QAM</h3><script type="math/tex; mode=display">
+\begin{split}
+d(i)=&\dfrac{1}{\sqrt{10}}\biggl\{\bigl(1-2b(4i)\bigr)\Bigl[2-\bigl(1-2b(4i+2)\bigr)\Bigr]\\
+&j\bigl(1-2b(4i+1)\bigr)\Bigl[2-\bigl(1-2b(4i+3)\bigr)\Bigr]\biggr\}
+\end{split}</script><h3 id="5-64QAM"><a href="#5-64QAM" class="headerlink" title="5. 64QAM"></a>5. 64QAM</h3><script type="math/tex; mode=display">
+\begin{split}
+d(i)=&\dfrac{1}{\sqrt{42}}\bigg\{\big(1-2b(6i)\big)\bigg[4-\big(1-2b(6i+2)\big)\Big[2-\big(1-2b(6i+4)\big)\Big]\bigg]\\
+&j\big(1-2b(6i+1)\big)\bigg[4-\big(1-2b(6i+3)\big)\Big[2-\big(1-2b(6i+5)\big)\Big]\bigg]\bigg\}
+\end{split}</script><h2 id="解调"><a href="#解调" class="headerlink" title="解调"></a>解调</h2>
       
 
       
@@ -611,6 +614,21 @@ MathJax.Hub.Queue(function() {
     </div>
 
 </div>
-  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
